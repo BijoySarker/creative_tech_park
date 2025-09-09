@@ -16,7 +16,7 @@ class ProductController extends Controller
 
     public function create()
     {
-        $categories = Category::where('status', 'active')->get(); // fetch categories
+        $categories = Category::where('status', 'active')->get();
         return view('products.create', compact('categories'));
     }
 
@@ -37,14 +37,14 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product created successfully.');
     }
 
-    public function show(string $id)
-    {
-        //
-    }
+//    public function show(string $id)
+//    {
+//        //
+//    }
 
     public function edit(Product $product)
     {
-        $categories = Category::where('status', 'active')->get(); // fetch categories
+        $categories = Category::where('status', 'active')->get();
         return view('products.edit', compact('product', 'categories'));
     }
 

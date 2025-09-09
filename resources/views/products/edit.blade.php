@@ -18,21 +18,21 @@
             @csrf
             @method('PUT')
 
-            <!-- Product Name -->
+
             <div class="mb-4">
                 <label class="block text-gray-700 font-semibold mb-1">Product Name</label>
                 <input type="text" name="product_name" value="{{ old('product_name', $product->product_name) }}"
                        class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200" required>
             </div>
 
-            <!-- Price -->
+
             <div class="mb-4">
                 <label class="block text-gray-700 font-semibold mb-1">Price</label>
                 <input type="number" step="0.01" name="price" value="{{ old('price', $product->price) }}"
                        class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200" required>
             </div>
 
-            <!-- Categories -->
+
             <div class="mb-4">
                 <label class="block text-gray-700 font-semibold mb-2">Categories</label>
                 <div class="grid grid-cols-2 md:grid-cols-3 gap-2 max-h-64 overflow-y-auto border p-3 rounded-lg bg-gray-50">
@@ -47,21 +47,21 @@
                 </div>
             </div>
 
-            <!-- Brand -->
+
             <div class="mb-4">
                 <label class="block text-gray-700 font-semibold mb-1">Brand</label>
                 <input type="text" name="brand" value="{{ old('brand', $product->brand) }}"
                        class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200" required>
             </div>
 
-            <!-- Product Warranty -->
+
             <div class="mb-4">
                 <label class="block text-gray-700 font-semibold mb-1">Product Warranty</label>
                 <input type="text" name="product_warranty" value="{{ old('product_warranty', $product->product_warranty) }}"
                        class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200">
             </div>
 
-            <!-- Buttons -->
+
             <div class="flex items-center">
                 <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
                     Update Product

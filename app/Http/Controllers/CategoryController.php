@@ -9,16 +9,13 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        // Fetch all categories, paginated
         $categories = Category::latest()->paginate(10);
-
-        // Pass to the view
         return view('categories.index', compact('categories'));
     }
 
     public function create()
     {
-        $categories = Category::whereNull('parent_id')->get(); // Main categories for parent selection
+        $categories = Category::whereNull('parent_id')->get();
         return view('categories.create', compact('categories'));
     }
 

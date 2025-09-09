@@ -23,7 +23,6 @@
             </div>
 
 
-
             <div class="mb-4">
                 <label class="block text-gray-700">Status</label>
                 <select name="status" class="w-full p-2 border rounded-lg focus:ring focus:ring-blue-200" required>

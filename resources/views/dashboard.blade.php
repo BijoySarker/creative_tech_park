@@ -5,7 +5,7 @@
         <h2 class="text-3xl font-bold text-gray-800 mb-6">Dashboard</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Products Card -->
+
             <a href="{{ route('products.index') }}" class="block p-6 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
                 <div class="flex items-center justify-between">
                     <div>
@@ -18,7 +18,7 @@
                 </div>
             </a>
 
-            <!-- Categories Card -->
+
             <a href="{{ route('categories.index') }}" class="block p-6 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
                 <div class="flex items-center justify-between">
                     <div>

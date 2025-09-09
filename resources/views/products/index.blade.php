@@ -34,7 +34,7 @@
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{{ $product->product_name }}</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">{{ $product->price }}</td>
 
-                            <!-- Categories -->
+
                             <td class="px-6 py-4 whitespace-nowrap text-sm">
                                 @forelse($product->categories as $category)
                                     <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full text-xs mr-1 mb-1">

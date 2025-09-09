@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ config('app.name', 'Creative Tech Park') }}</title>
+    <title>Creative Tech Park</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
